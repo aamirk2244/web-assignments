@@ -1,0 +1,61 @@
+<html>
+<head>
+<!-- include remote jquery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<script type = "text/javascript">
+
+$(document).ready(function(){
+
+$(".flip").click(function(){
+  $(".panel").slideToggle("slow");
+
+})
+
+
+})
+
+
+
+
+</script>   
+
+
+<style type="text/css">
+
+div.panel, p.flip{
+  margin: 0px;
+  padding : 5px;
+  text-align: center;
+  background: #e5eecc ;
+  border: solid 1px #c3c3c3;
+
+}
+div.panel
+{
+  height: 120px;
+  display: none;
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+  
+
+  <div class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut officiis similique quis. .</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut officiis similique</p>
+
+  </div>
+<p class="flip">Show/hide</p>
+
+
+  </body>
+  </html>
+  
