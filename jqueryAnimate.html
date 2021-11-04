@@ -1,0 +1,94 @@
+<html>
+<head>
+<!-- include remote jquery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<script type = "text/javascript">
+
+
+function checkEqual()
+{
+  if (document.getElementById("text1").value == document.getElementById("text2").value)
+  {
+    $(document).ready(function(){
+      $("div.square").css('background-color', 'green').animate({'margin-left': '50%', 'height':'300px', 'width' : '300px'}, 5000).animate({'margin':'0', 'height':'100px', 'width':'100px'}, 5000);
+
+    })
+
+  }
+  else
+  {
+    $(document).ready(function(){
+      $("div.square").css('background-color', 'red').animate({'margin-left': '50%', 'height':'300px', 'width' : '300px'}, 5000).animate({'margin':'0', 'height':'100px', 'width':'100px'}, 5000);
+    })
+  }
+  
+  
+}
+
+</script>   
+
+
+<style type="text/css">
+
+div.panel, p.flip{
+
+  margin: 0px;
+  padding : 5px;
+  text-align: center;
+  background: #e5eecc ;
+  border: solid 1px #c3c3c3;
+
+}
+div.square{
+  height: 100px;
+  width : 100px;
+  /* margin-left : ;
+
+margin-right : ; */
+  
+  background-color: blue;
+}
+div.panel
+{
+  height: 120px;
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+  
+
+  <div class="panel">
+    <p><strong>Assignment</strong> </p>
+    Make two text boxes and a button in HTML.
+Make a blue color square below that. 
+
+
+
+
+A user will enter some text in both the text fields and will click on the button. if the two texts are equal the square will move left to right and back to left and change the size of the box as well as it will grow bigger and back to the same size (Use animate). Change its color to green as well.
+If the two texts are not equal, the square will still move left to right and back to left and will have the same effect on its size as well. This time change the color to red.
+
+
+Change color separately using CSS function.
+    <br>
+    <input id="text1" type="text" placeholder="Enter Text">
+    <input id="text2" type="text" placeholder="Enter Text">
+  
+  </div>
+<p class="flip"><input type="button" value = "Start Animation " onclick="checkEqual()"></p>
+<div class ="square">
+  .
+
+</div>
+
+  </body>
+  </html>
+  
